@@ -15,4 +15,11 @@ box = soup.find('article', class_='main-article')
 
 # en lugar de soup.find ponemos box para referirnos al article
 title = box.find('h1').get_text()
+
+# creamos la variable transcript
+transcript = box.find('div', class_='full-script').get_text()
+
+#imprimimos
 print(title)
+print(transcript)
+
